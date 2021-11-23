@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sagemaker = {extras = ["local"], version = "*"}
+numpy = "*"
+pillow = "*"
+torch = "~=1.9.0"
+torchvision = "~=0.10.0"
+torchsummary = "*"
+boto3 = "*"
+tqdm = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

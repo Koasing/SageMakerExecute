@@ -124,7 +124,7 @@ def main(args):
                 'optimizer_state_dict': optimizer.state_dict(),
                 'scheduler_state_dict': scheduler.state_dict()
             },
-                f'{args.checkpoints_dir}/model_{epoch}.pth')
+                f'{args.artifacts_dir}/model_{epoch}.pth')
 
     # save final model
     torch.save(model.state_dict(), f'{args.model_dir}/mnist_cnn.pt')
